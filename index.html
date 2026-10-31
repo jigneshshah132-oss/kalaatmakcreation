@@ -3,72 +3,106 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kalaatmak Creation | Customized Gifts & Laser Art</title>
+<meta name="description" content="Kalaatmak Creation - Premium personalised gifts, MDF art and laser engraving.">
+<title>Kalaatmak Creation | Premium Custom Gifts</title>
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;color:#29251f;background:#fff}
-header{background:#211d19;color:white;padding:20px;text-align:center}
-header h1{margin:0;font-size:27px;letter-spacing:1px}
-header p{color:#e6c99a;margin:8px 0 0}
-nav{background:#fff;padding:15px;text-align:center;position:sticky;top:0;box-shadow:0 2px 8px #ddd}
-nav a{color:#33281e;text-decoration:none;margin:0 9px;font-size:14px}
-.hero{background:linear-gradient(120deg,#30251d,#79583b);color:white;text-align:center;padding:75px 20px}
-.hero h2{font-size:36px;margin:0 0 15px}
-.hero p{font-size:17px;line-height:1.6}
-.btn{display:inline-block;background:#d5a65e;color:#211d19;padding:14px 24px;border-radius:30px;text-decoration:none;font-weight:bold;margin-top:15px}
-section{padding:45px 18px;text-align:center}
-h2{color:#65452c}
-.products{display:grid;grid-template-columns:repeat(2,1fr);gap:15px;max-width:850px;margin:auto}
-.product{background:#faf6f0;border-radius:12px;padding:25px 10px;border:1px solid #eadfce}
-.product .emoji{font-size:42px}
-.product h3{font-size:16px}
-.about{background:#f8f3ec;line-height:1.8}
-footer{background:#211d19;color:white;text-align:center;padding:30px 15px}
-footer p{line-height:1.8}
-@media(min-width:650px){.products{grid-template-columns:repeat(3,1fr)}.hero h2{font-size:48px}}
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--brown:#211b17;--brown2:#39291e;--gold:#d8b477;--cream:#f8f3ea;--white:#fff}
+html{scroll-behavior:smooth}
+body{font-family:Georgia,'Times New Roman',serif;color:var(--brown);background:#fff;line-height:1.6}
+header{background:var(--brown);color:white;text-align:center;padding:27px 15px 23px;border-bottom:3px solid var(--gold)}
+.brand{font-size:clamp(25px,5vw,40px);letter-spacing:3px;font-weight:bold}
+.tagline{color:var(--gold);font-family:Arial,sans-serif;font-size:13px;letter-spacing:2px;margin-top:7px}
+nav{background:#fff;display:flex;justify-content:center;flex-wrap:wrap;gap:25px;padding:15px 8px;box-shadow:0 3px 12px #00000012;position:sticky;top:0;z-index:5}
+nav a{font-family:Arial,sans-serif;text-decoration:none;color:var(--brown);font-size:13px;font-weight:bold;letter-spacing:1px}
+nav a:hover{color:#9b7139}
+.hero{background:linear-gradient(115deg,#211b17 0%,#493323 60%,#705033 100%);color:white;text-align:center;padding:90px 20px 100px;border-bottom:5px solid var(--gold)}
+.eyebrow{color:var(--gold);font-family:Arial,sans-serif;font-size:12px;letter-spacing:4px;text-transform:uppercase}
+.hero h1{font-size:clamp(35px,7vw,62px);line-height:1.15;margin:20px auto;max-width:850px;color:#fff}
+.hero p{font-family:Arial,sans-serif;font-size:17px;color:#f4e8d5;max-width:620px;margin:0 auto 25px}
+.btn{display:inline-block;background:var(--gold);color:#241b13;text-decoration:none;padding:14px 27px;border-radius:3px;font-family:Arial,sans-serif;font-weight:bold;font-size:14px;letter-spacing:.5px;margin:8px 5px;border:1px solid var(--gold)}
+.btn.outline{background:transparent;color:var(--gold)}
+.section{padding:65px 18px;text-align:center}
+.section-title{font-size:clamp(28px,5vw,38px);color:var(--brown);margin-bottom:8px}
+.gold-line{width:65px;height:3px;background:var(--gold);margin:15px auto 20px}
+.intro{font-family:Arial,sans-serif;color:#71665b;font-size:15px;max-width:650px;margin:0 auto 30px}
+.products{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;max-width:1000px;margin:auto}
+.product{border:1px solid #e9dfd0;background:#fff;padding:25px 10px 22px;transition:.2s}
+.product:hover{border-color:var(--gold);transform:translateY(-3px)}
+.product-icon{height:90px;display:grid;place-items:center;background:var(--cream);font-size:45px;margin-bottom:17px}
+.product h3{font-size:17px;color:var(--brown);margin-bottom:5px}
+.product p{font-family:Arial,sans-serif;color:#81776d;font-size:12px}
+.about{background:var(--cream)}
+.about-inner{max-width:760px;margin:auto}
+.about p{font-family:Arial,sans-serif;color:#655a4f;font-size:15px;margin:15px auto}
+.promise{background:var(--brown);color:white;padding:42px 18px;text-align:center}
+.promise h2{color:var(--gold);font-size:28px;margin-bottom:10px}
+.promise p{font-family:Arial,sans-serif;color:#f3e7d7}
+.contact{background:#fff}
+.contact p{font-family:Arial,sans-serif;color:#6e6256;margin:12px auto}
+footer{background:#171310;color:#e9ddca;text-align:center;padding:30px 15px}
+footer h2{color:var(--gold);letter-spacing:2px;font-size:22px}
+footer p{font-family:Arial,sans-serif;font-size:12px;margin-top:8px;color:#c8bba9}
+@media(min-width:650px){.products{grid-template-columns:repeat(3,1fr);gap:22px}.product{padding:30px 18px}.section{padding:80px 25px}}
 </style>
 </head>
 <body>
 <header>
-<h1>KALAATMAK CREATION</h1>
-<p>Creativity • Craftsmanship • Custom Gifts</p>
+<div class="brand">KALAATMAK CREATION</div>
+<div class="tagline">ART • CREATIVITY • CRAFTSMANSHIP</div>
 </header>
 <nav>
-<a href="#home">Home</a>
-<a href="#products">Products</a>
-<a href="#about">About Us</a>
-<a href="#contact">Contact</a>
+<a href="#home">HOME</a>
+<a href="#products">OUR PRODUCTS</a>
+<a href="#about">ABOUT US</a>
+<a href="#contact">CONTACT</a>
 </nav>
-<div class="hero" id="home">
-<h2>Make Every Gift Special</h2>
-<p>Beautifully Crafted MDF Art, Laser Engraving<br>and Personalised Gifts.</p>
-<a class="btn" href="#products">Explore Our Creations</a>
-</div>
-<section id="products">
-<h2>Our Products</h2>
-<p>Thoughtful designs, beautifully made.</p>
+<main>
+<section class="hero" id="home">
+<div class="eyebrow">Thoughtfully Made • Beautifully Gifted</div>
+<h1>Gifts That Tell Your Story</h1>
+<p>Discover unique MDF art, personalised gifts and precision laser engraving — crafted with creativity and care.</p>
+<a class="btn" href="#products">EXPLORE OUR COLLECTION</a>
+<a class="btn outline" href="#contact">GET A CUSTOM QUOTE</a>
+</section>
+<section class="section" id="products">
+<h2 class="section-title">Our Creations</h2>
+<div class="gold-line"></div>
+<p class="intro">Meaningful designs, personalised details and beautiful craftsmanship for every occasion.</p>
 <div class="products">
-<div class="product"><div class="emoji">🎨</div><h3>MDF Multi-Layer Art</h3></div>
-<div class="product"><div class="emoji">🖼️</div><h3>Photo Engraving</h3></div>
-<div class="product"><div class="emoji">🔑</div><h3>Customized Keychains</h3></div>
-<div class="product"><div class="emoji">🎁</div><h3>Personalised Gifts</h3></div>
-<div class="product"><div class="emoji">🪵</div><h3>Wooden Engraving</h3></div>
-<div class="product"><div class="emoji">☕</div><h3>Tea Coasters</h3></div>
+<div class="product"><div class="product-icon">🎨</div><h3>MDF Multi-Layer Art</h3><p>Decorative art for your home</p></div>
+<div class="product"><div class="product-icon">🖼️</div><h3>Photo Engraving</h3><p>Memories made everlasting</p></div>
+<div class="product"><div class="product-icon">🔑</div><h3>Custom Keychains</h3><p>Personalised little treasures</p></div>
+<div class="product"><div class="product-icon">🎁</div><h3>Customised Gifts</h3><p>Special gifts for special people</p></div>
+<div class="product"><div class="product-icon">🪵</div><h3>Wooden Engraving</h3><p>Precision crafted designs</p></div>
+<div class="product"><div class="product-icon">☕</div><h3>Tea Coasters</h3><p>Beautiful everyday details</p></div>
 </div>
 </section>
-<section class="about" id="about">
-<h2>About Kalaatmak Creation</h2>
-<p>We create unique and customised gifts with creativity and precision. From beautiful MDF artwork to personalised laser engraving, every creation is made with care.</p>
+<section class="section about" id="about">
+<div class="about-inner">
+<div class="eyebrow">A Little About Us</div>
+<h2 class="section-title">Crafted With Creativity</h2>
+<div class="gold-line"></div>
+<p>At Kalaatmak Creation, we turn creative ideas into memorable keepsakes. We specialise in MDF artwork, laser engraving and personalised gifts, with attention to detail in every creation.</p>
+<p>Have a design in mind? Let's bring your idea to life.</p>
+</div>
 </section>
-<section id="contact">
-<h2>Let's Create Something Special!</h2>
-<p>Have an idea? Contact us for customised orders and quotations.</p>
-<a class="btn" href="https://wa.me/91YOURNUMBER">Chat on WhatsApp</a>
+<section class="promise">
+<h2>Your Idea. Our Craftsmanship.</h2>
+<p>Personalised creations made especially for you.</p>
 </section>
+<section class="section contact" id="contact">
+<div class="eyebrow">Let's Create Together</div>
+<h2 class="section-title">Have a Custom Idea?</h2>
+<div class="gold-line"></div>
+<p>Contact us for custom orders, product details and quotations.</p>
+<a class="btn" href="https://wa.me/91YOURNUMBER">CHAT WITH US ON WHATSAPP</a>
+</section>
+</main>
 <footer>
-<h3>KALAATMAK CREATION</h3>
-<p>Custom Gifts | MDF Art | Laser Engraving</p>
-<p>Thank you for visiting us!</p>
+<h2>KALAATMAK CREATION</h2>
+<p>PREMIUM CUSTOM GIFTS • MDF ART • LASER ENGRAVING</p>
+<p>Creativity in every creation.</p>
 </footer>
 </body>
 </html>
